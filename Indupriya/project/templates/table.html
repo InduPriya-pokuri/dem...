@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiplication Table</title>
+</head>
+<body bgcolor="lightblue">
+	<center>
+	<table border="4">
+		<h1 style="color: green">Multiplication Table {{num1}}To{{num2}}</h1>
+{% for i in range(1,num1+1): %}
+<tr>
+{% for j in range(1,num2+1):%}
+
+ <td>{{i}}*{{j}}={{i*j}}</td>
+{% endfor %}
+{% endfor %}
+</tr>
+</table>
+</center>
+</body>
+</html>

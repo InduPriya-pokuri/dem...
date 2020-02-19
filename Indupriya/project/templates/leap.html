@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LeapYears</title>
+</head>
+<body style="background-color: #FFFF">
+	<h1 style="color:blue">Range of leapyears{{num1}}To{{num2}}</h1>
+{% for year in range(num1,num2+1):%}
+{% if year%400==0 or (year%100!=0 and year%4==0):%}
+<ol>{{year}}</ol>
+{% endif %}
+{% endfor %}
+</body>
+</html>
